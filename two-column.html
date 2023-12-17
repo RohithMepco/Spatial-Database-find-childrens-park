@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>DBMS</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"
+  />
+  <title>Google Maps Clone</title>
+  <style>
+    body {
+      margin: 0;
+    }
+.cc{
+  text-align: center;
+  background-color: greenyellow;
+  border: 3px solid gray;
+  margin:3% auto;
+  width: 25%;
+  color:red;
+  font-weight:bold;
+  font-family: Castellar;
+}
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+    body{
+      background-color: #ebecf1;
+      color:#b3b9b9;
+    animation: bodyColor 5s infinite;
+    
+  }
+  @keyframes bodyColor {
+  from{
+  
+    background-color: rgba(227, 227, 20, 0.737);
+  }
+  to
+  {
+    background-color: aquamarine;
+  }
+}
+.v{
+  color:black;
+}
+    
+  </style>
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+      <!--Main Navigation-->
+      <div id='map'></div>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="_blank" href="https://www.google.com/maps/d/viewer?hl=en&mid=1aRRmzZF5wYPa5AoRw15-QDCZ9nZiI0Y&ll=13.007098000000006%2C80.22627699999997&z=11">
+          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy"
+            style="margin-top: -3px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="cc" aria-current="page" href="http://localhost/spatial/">DataBase site</a>
+            </li>
+           
+            
+          </ul>
+
+          
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section class="text-center">
+        <h2 class="mb-5 v"><strong>Parks</strong></h2>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Entrance_of_Semmozhi_poonga_20181110215351_20181110215758.jpg" class="img-fluid" />
+                <a href="https://maps.app.goo.gl/HGJECXSqZGuiBw6v7" target="_blank">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Semmozhi Poonga</h5>
+                <p class="card-text v">
+                  Semmozhi Poonga is the first botanical park in Chennai. Boasting over 500 species of plants, the collection includes herbs and medicinal plants as well. The entire park has been divided into 8 zones with an individual theme. The park is one of the most popular tourist spots in the city owing to its charm, beauty and bounteous nature.
+                </p>
+                <a href="https://www.holidify.com/places/chennai/semmozhi-poonga-sightseeing-125005.html" target= "_blank" class="btn btn-primary">Read</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Guindy_National_Park_45_20181109130225_20181109130814.jpg" class="img-fluid" />
+                <a href="https://maps.app.goo.gl/ZKjzRVBv27e7oW6s5" target="_blank">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Guindy National Park</h5>
+                <p class="card-text v">
+                  Guindy National Park in Chennai is the dominant factor in contributing to the lush green cover of the city. Known to be the 8th smallest national park in the country, the land is blessed with dense forest area, scrub lands, lakes and streams etc. Boating of varied flora and fauna, and a rich wildlife.
+                </p>
+                <a href="https://www.holidify.com/places/chennai/guindy-national-park-sightseeing-125000.html" target="_blank" class="btn btn-primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.encirclephotos.com/wp-content/uploads/Kentucky-Lexington-Secretariat-Sculpture-Kentucky-Horse-Park-Bogucki.jpg" class="img-fluid" />
+                <a href="https://maps.app.goo.gl/RexJGLcQrsjXfM9K6" target="_blank">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Secretariat Park</h5>
+                <p class="card-text v">
+                  Located opposite the Secretariat at Fort St. George near the Chennai Port, the Secretariat Park is beautiful urban park in the city. Initially an underdeveloped piece of land, the area has now been transformed into a vast green space ideal for morning and evening walks or/and to spend some outdoor time amidst fresh air and lush greenery.
+                </p>
+                <a href="https://www.holidify.com/places/chennai/secretariat-park-sightseeing-125002.html" target="_blank" class="btn btn-primary">Read</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/a1_20170927161112.PNG" class="img-fluid" />
+                <a href="https://maps.app.goo.gl/oyWE3HUoEHx2DkBu9" target="_blank">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Aringar Anna Park</h5>
+                <p class="card-text v">
+                  One of the most popular picnic spots in Vandalur, the Arignar Zoological Park is an amazing place to discover the flora and fauna of the region.  A favourite weekend spot with both children and adults alike, the Arignar Zoo is situated at a distance of 32 kilometres from Chennai city.  In addition to this, they have a small built-in Jurassic park which just adds on to the excitement. Elephant joy rides, children's park and an education centre are amongst the other special features of the park.
+                </p>
+                <a href="https://www.holidify.com/places/chennai/arignar-anna-zoological-park-sightseeing-1540.html" target="_blank" class="btn btn-primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <!-- Pagination -->
+      <nav class="my-4" aria-label="...">
+        <ul class="pagination pagination-circle justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <!--Main layout-->
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <div align="center">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1aRRmzZF5wYPa5AoRw15-QDCZ9nZiI0Y&hl=en&ehbc=2E312F" width="90%" height="800"></iframe></div>
+
+  </body>
+</html>
